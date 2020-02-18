@@ -1,0 +1,53 @@
+body {
+    background-color: #EAEBED
+;
+}
+
+#tevas {
+    display: inline-block;
+    width: 600px;
+    margin-top: 120px;
+    margin-left: 400px;
+    background-color: yellow;
+}
+#kaire {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    background-color: pink;
+    
+}
+
+#desine {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    background-color: aqua;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#antras {
+    display: inline-block;
+    font-size: 10px;
+}
+a {
+    display: inline-block;
+    padding: 20px;
+    background-color: #696F89;
+    color: white;
+}
