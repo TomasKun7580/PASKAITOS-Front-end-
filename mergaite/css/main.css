@@ -23,9 +23,8 @@ body {
         nav {
             display: inline-block;
             float: right;
-            margin-top: 20px;
+            margin-top: 16px;
             font-size: 20px;
-            text-align: center;
         }
 
             a {
@@ -38,13 +37,15 @@ body {
                 color: #9F9F9F;
             }
                 .btn {
+                    margin-top: -4px;
                     display: inline-block;
-                    font-size: 15px;
+                    font-size: 20px;
                     text-transform: uppercase;
                     border-radius: 20px;
-                    border-style: solid;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    border: 2px solid #9F9F9F;
+                    padding: 2px;
+                    padding-left: 10px;
+                    padding-right: 10px;
                 }
     section {
         display: inline-block;
@@ -57,17 +58,20 @@ body {
             margin-top: 40px;
             margin-left: 4%;
             margin-right: 4%;
+            color: #9F9F9F;
+
         }   
             h1 {
-                text-align: center;
-                font-size: 90px;
-                color: #9F9F9F;
+                display: inline-block;
+                width: 100%;
+                font-size: 80px;
+                line-height: 80px;
             }
             p {
                 display: inline-block;
-                text-align: center;
-                font-size: 20px;
-                color: #9F9F9F;
+                width: 100%;
+                font-size: 35px;
+                line-height: 40px;
             }
         .mergaite {
             display: inline-block;
