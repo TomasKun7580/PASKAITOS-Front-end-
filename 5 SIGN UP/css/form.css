@@ -1,0 +1,32 @@
+form {
+    display: inline-block;
+    
+}
+    .form-row {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+        label {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        input {
+            display: inline-block;
+            width: 100%;
+            border: none;
+            border-bottom: gray solid;
+        }
+        .btn {
+            display: inline-block;
+            
+        }
+        span {
+            display: inline-block;
+            
+        }
+        a {
+            display: inline-block;
+            
+        }
