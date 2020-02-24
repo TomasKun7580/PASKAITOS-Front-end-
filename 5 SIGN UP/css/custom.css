@@ -8,7 +8,7 @@ body{
     background-image: url(../img/kalnas.png);
     background-position: center;
     background-size: cover;
-    filter: blur(4px);
+    filter: blur(10px);
 }
 
 .container {
@@ -37,11 +37,9 @@ body{
     }
         h1 {
             text-transform: capitalize;
-            color: #fff;
             font-weight: normal;
         }
         footer {
-            color: #fff;
             position: absolute;
             left: 50px;
             right: 50px;
@@ -57,36 +55,47 @@ body{
         display: inline-block;
         width: 60%;
         float: right;
-        background-color: white;
         padding: 80px;
-        position: relative;
+        background-color: white;
         }
         .x {
            display: inline-block;
-           background-color: pink;
            width: 80px;
            height: 80px;
-           text-align: center;
-           font-size: 24px;
-           line-height: 76px;
            position: absolute;
            top: 0;
            right: 0;
         }
+            .x::after,
+            .x::before {
+                display: inline-block;
+                content: '';
+                height: 2px;
+                background-color: gray;
+                width: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .x::after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
         .btn,
-        .for-row > span,
-        .for-row > a {
+        .form-row > span,
+        .form-row > a {
             display: inline-block;
             float: left;
-            padding: 10px;
             padding: 10px;
             font-size: 18px;
             line-height: 20px;
         }
         .btn {
-            display: inline-block;
-            float: left;
-            background-color: #36f;
+            background: #1e5799; 
+            background: -moz-linear-gradient(left,  #1e5799 0%, #2989d8 100%, #207cca 100%); 
+            background: -webkit-linear-gradient(left,  #1e5799 0%,#2989d8 100%,#207cca 100%); 
+            background: linear-gradient(to right,  #1e5799 0%,#2989d8 100%,#207cca 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=1 ); 
             color: #fff;
             padding-right: 50px;
             padding-left: 50px;
