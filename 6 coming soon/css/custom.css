@@ -1,0 +1,76 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    padding: 80px;
+}
+    .container.hero {
+        background-color: #36f;
+        background-image: url(../img/fonas.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+    }.container.container{
+        background-color: #fff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+}
+    .container.footer {
+        background-color: #36f;
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+    .container > .hero-row {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+    .container > .row {
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc(50% - 500px);
+    }
+        .container > .row > .left {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        } 
+        .container > .row > .right {
+            display: inline-block;
+            width: 40%;
+            float: right;
+        } 
+
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+    }
+}
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .container > .hero-row, 
+    .container > .row {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0;
+    }
+        .container > .row > .left {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        .container > .row > .right {
+            width: 100%;
+        }
+}
+
