@@ -1,0 +1,36 @@
+.clock {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+    .clock > .time {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        margin: 20px 0;
+    }
+        .clock > .time > .value {
+            display: inline-block;
+            width: 100%;
+            font-size: 64px;
+            line-height: 60px;
+            font-weight: bold;
+        }
+        .clock > .time > .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+@media (max-width: 700px) {
+    .clock > .time {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .clock > .time:nth-of-type(3),
+    .clock > .time:nth-last-of-type(4){
+        margin-bottom: 0;
+    }
+}
