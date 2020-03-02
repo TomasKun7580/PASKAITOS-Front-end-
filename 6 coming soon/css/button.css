@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #EA1E63;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px #0006;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+    .btn:hover {
+        background-color: #fa0053;
+        box-shadow: 0 1px 2px #000a;
+    }
+    .btn.btn-circle {
+        width: 40px;
+        padding: 10px 0;
+        font-size: 22px;
+        border-radius: 50%;
+    }

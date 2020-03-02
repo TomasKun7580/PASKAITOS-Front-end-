@@ -5,11 +5,13 @@
     padding: 80px 0;
 }
     .container.hero {
+        min-height: 100vh;
         background-color: #36f;
         background-image: url(../img/fonas.png);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: cover;
+        background-attachment: fixed;
         padding-bottom: 20px;
 
     }.container.container{
@@ -107,6 +109,15 @@
     width: 90%;
     margin: 0 5% 10px;
 }
+    .hero-row form > input {
+         width: 100%;
+        background-color: transparent;
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+.hero-row form > input::placeholder {
+    color: #fff;
+}
 .hero-row > .mouse {
     display: inline-block;
 }
@@ -130,4 +141,24 @@
     .content p > a {
         text-decoration: none;
         color:#EA1E63;
+    }
+    .content form > .btn {
+        float: right;
+    }
+
+    /* FOOTER */
+
+    .footer > .row {
+        position: relative;
+    }
+        .footer .btn {
+            position: absolute;
+            top: -36px;
+            right: -12px;
+        }
+    
+    @media (max-width: 700px) {
+        .footer .btn {
+            display: none;
+        }
     }
