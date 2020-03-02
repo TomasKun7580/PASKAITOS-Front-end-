@@ -19,7 +19,6 @@
     .container.footer {
         background-color: #36f;
         padding-top: 10px;
-        padding-bottom: 80px;
     }
     .container > .hero-row {
         display: inline-block;
@@ -86,10 +85,11 @@
     width: 100%;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #000);
+    color: #000;
     font-size: 64px;
     line-height: 60px;
 }
+
 .hero-row > p {
     display: inline-block;
     width: 100%;
@@ -118,14 +118,13 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
 }
 .content p {
     display: inline-block;
     width: 100%;
     margin: 20px 0;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     color: #777;
 }
     .content p > a {
