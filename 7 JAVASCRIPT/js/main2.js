@@ -112,3 +112,31 @@ if ( akys === 'zalios' ) {
 // } else {
 //     console.log('a tu turi akis?');
 // }
+
+
+console.log('----------------------');
+
+let zodis1 = 'medis';
+let zodis2 = 'medelis';
+
+if (zodis1.length >= zodis2.length) {
+    console.log( zodis1 );
+} else {
+    console.log( zodis2 );
+}
+
+console.log('-----------------------');
+
+var sarasas1 = ['medis', 'pieva', 'krumas'];
+var sarasas2 = ['medziai', 'pievos', 'krumai', 'lapai'];
+
+console.log(sarasas1.length);
+console.log(sarasas2.length);
+
+if (sarasas1.length > sarasas2.length) {
+    console.log('pirmas sarasas ilgesnis')
+} else {
+    console.log('antras sarasas ilgesnis')
+}
+console.log('--------------------------')
+
