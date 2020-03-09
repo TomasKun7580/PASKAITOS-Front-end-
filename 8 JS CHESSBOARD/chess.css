@@ -1,8 +1,0 @@
-.board {
-    display: inline-block;
-    float: left;
-    width: 90vmin;
-    height: 90vmin;
-    margin: 5vmin calc(50% - 45vmin);
-    border: 10px solid red;
-}
