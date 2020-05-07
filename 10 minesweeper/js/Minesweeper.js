@@ -82,7 +82,7 @@ class Minesweeper {
 
         this.bombCounter = new BombCounter(this.DOMheader, this.bombsCount);
         this.smile = new Smile(this.DOMheader, this);
-        this.timer = new Timer(this.DOMheader);
+        this.timer = new Timer(this.DOMheader, this);
 
         for ( let i=0; i<this.width * this.height; i++ ) {
             const x = i % this.width;
@@ -111,6 +111,7 @@ class Minesweeper {
         // jei tai pirmas paspaudimas - generuojame bombas
         if ( this.clickCount === 0 ) {
             this.createBombs( cellIndex );
+            this.timer.start();
         }
         this.clickCount++;
 
@@ -125,7 +126,6 @@ class Minesweeper {
             
             const cx = this.cells[cellIndex].x;
             const cy = this.cells[cellIndex].y;
-            console.log( 'Cele:', cx, cy );
             
             if ( surroundingBombs === 0 ) {
                 for ( let dx=-1; dx<=1; dx++ ) {
@@ -143,6 +143,7 @@ class Minesweeper {
             if ( this.isWin() ) {
                 this.canPlay = false;
                 this.smile.win();
+                this.timer.stop();
             }
         }
     }
@@ -202,10 +203,15 @@ class Minesweeper {
     gameOver() {
         this.canPlay = false;
         this.smile.sad();
+        this.timer.stop();
         console.log('GAME OVER...');
+    }
+
+    updateBombCounter( value ) {
+        this.bombCounter.update(value);
     }
 }
 
-const game = new Minesweeper('#game', 30, 18, 5);
+const game = new Minesweeper('#game', 20, 10, 5);
 
 console.log(game);
